@@ -6,10 +6,11 @@
 }
 
   .newarrivals .container {
-      height: 976px;
+      height: 830px;
   }
 
-#carousel-title {
+  
+  .newarrivals #carousel-title {
   padding-top: 7rem;
   height: 260px;
   text-align: center;
@@ -18,39 +19,45 @@
   margin: auto;
 }
 
-#carousel-title p {
+.newarrivals #carousel-title p {
   font-weight: normal;
   margin-top: 1rem;
 
 }
 
-#header-first {
+.newarrivals #header-first {
   font-size: 2.25rem;
   color: #0E153D;
 }
 
-#header-second {
+.newarrivals #header-second {
   font-size: 2.25rem;
   color: #20D3C2;
 }
 
-.itemframe {
+.newarrivals .itemframe {
   display: flex;
   justify-content: space-between
   /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;  */
 }
-.itemframe .box-item {
-  background: #eeeeeb;
-  border-radius: 6px; 
-  position: relative; 
+
+.newarrivals .sizediv {
   height: 400px;
   width: 350px; 
 }
-  /* Ovan är ist för att ha det under PPartial? Det är endast det som ska in (på new arrivals och Featured Products eller under Partial), resterande _ProductPartial används  */
+
+.newarrivals .itemframe .box-item {
+  background: #eeeeeb;
+  border-radius: 6px; 
+  position: relative; 
+  height: 100%;
+  width: 100%; 
+}
+  /* Ovan är ist för att ha det under _ProductPartial. Det är endast det som ska in (på new arrivals och Featured Products eller under Partial), resterande _ProductPartial används  */
 
 
-#carouselExampleIndicators {
+  .newarrivals #carouselExampleIndicators {
   position: relative;
   justify-content: center; 
   
@@ -137,17 +144,6 @@ ul.tags-list li button.tag:hover {
   color: #0E153D;
   background-color: #fff; 
 }
-
-/*   .box-item {
-  overflow: hidden;
-  background: #eeeeeb;
-  border-radius: 6px; 
-  position: relative; 
-  height: 400px;
-  width: 350px; 
-  
-} */
-
   
 .box-item:hover .hovering-layer {
   opacity: 1;
@@ -158,10 +154,8 @@ ul.tags-list li button.tag:hover {
 .box-item img {
   position: absolute;
   top: 0; 
-}
-        
+}       
 
-      
 .box-item span {
   border-radius: 0 0 6px 6px;
   position: absolute;
